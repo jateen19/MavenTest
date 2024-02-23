@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>maven</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+<!--    Default version -->
+    <properties>
+        <java.version>17</java.version>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <!-- Define profiles for different Java versions -->
+    <profiles>
+        <!-- Profile for Java 8 -->
+        <profile>
+            <id>java8</id>
+            <properties>
+                <java.version>8</java.version>
+            </properties>
+        </profile>
+
+        <!-- Profile for Java 11 -->
+        <profile>
+            <id>java11</id>
+            <properties>
+                <java.version>11</java.version>
+            </properties>
+        </profile>
+
+        <!-- Profile for Java 14 -->
+        <profile>
+            <id>java14</id>
+            <properties>
+                <java.version>14</java.version>
+            </properties>
+        </profile>
+
+        <!-- Profile for Java 17 -->
+        <profile>
+            <id>java17</id>
+            <properties>
+                <java.version>17</java.version>
+            </properties>
+        </profile>
+    </profiles>
+
+</project>
