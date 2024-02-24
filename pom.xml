@@ -8,6 +8,14 @@
     <artifactId>maven</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+
+    <distributionManagement>
+        <repository>
+            <id>your-repository-id</id>
+            <url>https://github.com/jateen19/MavenTest.git</url>
+        </repository>
+    </distributionManagement>
+
     <!-- Default version -->
     <properties>
         <java.version>17</java.version>
